@@ -1,0 +1,13 @@
+﻿@model Catagory
+<div class="container mt-3">
+    <h4 class="card-title">Create Catagory</h4>
+    <form class="forms-sample" method="post" asp-action="Edit">
+        <div class="form-group">
+            <label asp-for="catagoryName">Catagory</label>
+            <input type="text" class="form-control" asp-for="catagoryName" maxlength=500 placeholder="Catagory">
+            <span class="text-danger" asp-validation-for="catagoryName"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Save</button>
+        <a asp-action="Index" class="btn btn-light">Cancel</a>
+    </form>
+</div>
